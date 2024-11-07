@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" >
+
+<h1>제목: [[${post.title}]]</h1>
+<h1>내용: [[${post.content}]]</h1>
+
+<div th:each="imageUrl : ${post.imageUrlList}">
+    <img th:src="${imageUrl}" style="width: 200px"/>
+</div>
+
+</html>
